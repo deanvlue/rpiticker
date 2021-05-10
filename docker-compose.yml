@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  ticker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ticker001
+    volumes:
+      - .:/app
